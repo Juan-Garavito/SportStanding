@@ -6,8 +6,7 @@ import { BetsContext } from "../context/bets"
 export function Matchs({result}){
    const {bets, setBets} = useContext(BetsContext)
 
-   console.log(result
-   )
+
   function handleCLick(event){
     event.preventDefault()
     const [newBet, target] = useSelect(event)  
