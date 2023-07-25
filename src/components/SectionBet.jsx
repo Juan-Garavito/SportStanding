@@ -21,6 +21,7 @@ export function SectionBet(){
                 <form className="form_apuesta" >
                 <label>Monto de Apuesta</label>
                 <input type="number" name="" id=""/>
+                <input type="submit" value="APOSTAR"/>
                 </form>
             }
            

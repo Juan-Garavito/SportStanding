@@ -3,6 +3,7 @@ import { TableStandingsBaseball } from "../components/TableStandingsBaseball.jsx
 import { useStandingBaseball } from "../hooks/useStandingsBaseball.jsx"
 import { DonutStandings } from "../components/DonutStandings"
 import { ScatterStandings } from "../components/ScatterStandings"
+import {SectionBet} from "../components/SectionBet"
 
 export function StandingsBaseball(){
     const {idLeague} = useParams()
@@ -18,6 +19,7 @@ export function StandingsBaseball(){
 
    
     return(
+        <>
         <section className="sec_estadistica">
             {result && <TableStandingsBaseball result={result}/>}
             {result && <DonutStandings data={data} title={"Promedio de victoria"} 
@@ -28,5 +30,8 @@ export function StandingsBaseball(){
             categories={{pa: "pa", pe: "pe"}} color={{uno: "#007bff", dos: "#c2084f"}} 
             title={"Puntos Anotados - Encajados VS Partidos Ganados"}/>}
         </section>
+        <SectionBet></SectionBet>
+        </>
+    
     );
 }

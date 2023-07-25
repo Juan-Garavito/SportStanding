@@ -6,6 +6,7 @@ import { useStandingsSoccer } from "../hooks/useStandingsSoccer"
 import {useScorersSoccer} from "../hooks/useScorersSoccer.jsx"
 import { useAssistsSoccer} from "../hooks/useAssistsSoccer.jsx"
 import { useParams } from "react-router-dom"
+import {SectionBet} from "../components/SectionBet"
 
 export function StandingsSoccer(){
     const {idLeague} = useParams()
@@ -18,6 +19,7 @@ export function StandingsSoccer(){
     const golesContra = result && result.map(res => {return {name: res.name, Goles_Contra: res.ge}}).sort((a,b)=> {const orden = a.Goles_Contra < b.Goles_Contra ? 1 : -1; return orden} ).slice(0,6)
 
     return(
+        <>
         <section className="sec_estadistica">
             {result && <TableStandingsSoccer result={result}/>}
             {topScores && <TableScoresSoccer result={topScores}/>}
@@ -25,5 +27,8 @@ export function StandingsSoccer(){
             {result && <BarStandings title={"Equipos con mas goles anotados"} data={golesFavor} color={"#007bff"} index={"name"} categories={"Goles_Favor"}/>}
             {result && <BarStandings title={"Equipos con mas goles encajados"} data={golesContra} color={"#c2084f"} index={"name"} categories={"Goles_Contra"}/>}
         </section>
+        <SectionBet></SectionBet>
+        </>
+      
     )
 }

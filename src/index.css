@@ -239,3 +239,16 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 900;
     }
+
+    .sec_apuesta .form_apuesta input[type="submit"]{
+        margin: 10px 5px;
+        border-radius: 5px;
+        padding: 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .sec_apuesta .form_apuesta input[type="submit"]:hover{
+        background-color: #fa0764;
+        color: aliceblue;
+        cursor: pointer;
+    }

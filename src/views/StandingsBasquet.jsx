@@ -3,7 +3,7 @@ import { useStandingBasket } from "../hooks/useStandingsBasket"
 import { TableStandingsBasket } from "../components/TableStandingsBasket"
 import { DonutStandings } from "../components/DonutStandings"
 import { ScatterStandings } from "../components/ScatterStandings"
-
+import {SectionBet} from "../components/SectionBet"
 
 export function StandingsBasquet(){
     const {idLeague} = useParams()
@@ -19,6 +19,7 @@ export function StandingsBasquet(){
 
 
     return(
+        <>
         <section className="sec_estadistica">
             {result && <TableStandingsBasket result={result}/>}
             {result && <DonutStandings data={data} title={"Promedio de victoria"} 
@@ -29,5 +30,8 @@ export function StandingsBasquet(){
             categories={{pa: "pa", pe: "pe"}} color={{uno: "#007bff", dos: "#c2084f"}} 
             title={"Puntos Anotados - Encajados VS Partidos Ganados"}/>}
         </section>
+        <SectionBet></SectionBet>
+        </>
+    
     )
 }

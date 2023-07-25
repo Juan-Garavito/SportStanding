@@ -26,6 +26,7 @@ export function Header(){
                 <li><a className={`${liga == "beisbol" ? "active" : ""}`} onClick={()=>{setLiga("beisbol")}}>Beisbol</a></li>
             </ul> 
             <ul>
+
                 <li><Link to={"/"}>Inicio</Link></li>
                 <li className="partidos" >
                     <a  href="">Partidos</a>
@@ -47,6 +48,9 @@ export function Header(){
                 </li>
                 <li className="favoritos">
                     <a href="">Favoritos</a>
+                </li>
+                <li>
+                    <a href="/login">Login</a>
                 </li>
             </ul> 
         </nav>
