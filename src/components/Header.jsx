@@ -27,7 +27,7 @@ export function Header(){
             </ul> 
             <ul>
 
-                <li><Link to={"/"}>Inicio</Link></li>
+                <li><Link to={"/SportStanding/index"}>Inicio</Link></li>
                 <li className="partidos" >
                     <a  href="">Partidos</a>
                     <ul className="opciones">
