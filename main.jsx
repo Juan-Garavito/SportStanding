@@ -20,7 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Header/>
       <div className='section_principal'>
         <Routes>
-              <Route path='/' element={<Live/>} />
+              <Route path='/index' element={<Live/>} />
               <Route path='/login' element={<App />} />
               <Route path='/partidos/futbol/:name/:idLeague' element={<MatchsSoccer/>} />
               <Route path='/partidos/basquet/:name/:idLeague' element={<MatchsBasquet/>} />
