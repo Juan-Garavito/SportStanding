@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://juan-garavito.github.io/SportStanding/index",
+  "homepage": "https://juan-garavito.github.io/SportStanding",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "npm run build && gh-pages -d dist",
