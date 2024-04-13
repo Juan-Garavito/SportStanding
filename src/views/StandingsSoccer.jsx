@@ -1,6 +1,6 @@
 import { BarStandings } from "../components/BarStandings.jsx"
 import { TableStandingsSoccer } from "../components/TableStandingsSoccer.jsx"
-import { TableScoresSoccer } from "../components/tableScoresSoccer.jsx"
+import { TableScoresSoccer } from "../components/TableScoresSoccer.jsx"
 import { TableAssistsSoccer } from "../components/TableAssistsSoccer.jsx"
 import { useStandingsSoccer } from "../hooks/useStandingsSoccer"
 import {useScorersSoccer} from "../hooks/useScorersSoccer.jsx"

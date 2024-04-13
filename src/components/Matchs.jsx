@@ -59,7 +59,7 @@ export function Matchs({ result }) {
                </td>
               }
               <td>
-                {bets && <p>{res.scoreh}-{res.scorea}</p>}
+                {bets && <p className="score">{res.scoreh}-{res.scorea}</p>}
                 <p className="time_partido">{res.time ?? "0"}</p>
               </td>
              {bets.some(bet => bet.id == res.id && bet.select.ganador == res.namea) ? 

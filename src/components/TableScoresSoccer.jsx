@@ -1,4 +1,4 @@
-export function TableScoresSoccer({result}) {
+export function TableScoresSoccer({ result }) {
     
     return (
       <>

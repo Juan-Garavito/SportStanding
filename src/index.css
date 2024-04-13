@@ -8,6 +8,7 @@
 
     .partidos .opciones, .estadisticas .opciones{
         display: none;
+        transition: all 0.6s 3s ease-in-out;
     }
 
     .partidos:hover > .opciones, .estadisticas:hover > .opciones{
@@ -17,9 +18,16 @@
         background-color: #007bff;
         border-radius: 5px;
         padding: 10px;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .partidos .opciones:hover, .estadisticas .opciones:hover{
+        display: flex;
+        flex-direction: column;
     }
 
     .partidos .opciones li:hover, .estadisticas .opciones li:hover{
+        
         background: #fa0764;
         border-radius: 5px;
         padding: 3px;
@@ -251,4 +259,8 @@
         background-color: #fa0764;
         color: aliceblue;
         cursor: pointer;
+    }
+
+    .score{
+        font-size: 12px;
     }
